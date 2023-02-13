@@ -16,12 +16,13 @@
 		707D1A9029937472000E2E99 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D1A8F29937472000E2E99 /* MessageBubble.swift */; };
 		707D1A9429937B36000E2E99 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D1A9329937B36000E2E99 /* MessageField.swift */; };
 		707D1A9629937DE3000E2E99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707D1A9529937DE3000E2E99 /* GoogleService-Info.plist */; };
-		707D1A992993815E000E2E99 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 707D1A982993815E000E2E99 /* FirebaseFirestore */; };
-		707D1A9B2993815E000E2E99 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 707D1A9A2993815E000E2E99 /* FirebaseFirestoreSwift */; };
 		707D1A9D2993829B000E2E99 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D1A9C2993829B000E2E99 /* MessagesManager.swift */; };
+		BAECAE1BF15514775BECE665 /* Pods_messenger_swiftui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120C51D921F8192C2665D1F1 /* Pods_messenger_swiftui.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120C51D921F8192C2665D1F1 /* Pods_messenger_swiftui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_messenger_swiftui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6220CD703D9A24C134610707 /* Pods-messenger_swiftui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messenger_swiftui.release.xcconfig"; path = "Target Support Files/Pods-messenger_swiftui/Pods-messenger_swiftui.release.xcconfig"; sourceTree = "<group>"; };
 		707D1A7829936F47000E2E99 /* messenger_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707D1A7B29936F47000E2E99 /* messenger_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messenger_swiftuiApp.swift; sourceTree = "<group>"; };
 		707D1A7D29936F47000E2E99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		707D1A9329937B36000E2E99 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		707D1A9529937DE3000E2E99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		707D1A9C2993829B000E2E99 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		EDF74F3A90698B2F0207FFF9 /* Pods-messenger_swiftui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-messenger_swiftui.debug.xcconfig"; path = "Target Support Files/Pods-messenger_swiftui/Pods-messenger_swiftui.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,19 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				707D1A992993815E000E2E99 /* FirebaseFirestore in Frameworks */,
-				707D1A9B2993815E000E2E99 /* FirebaseFirestoreSwift in Frameworks */,
+				BAECAE1BF15514775BECE665 /* Pods_messenger_swiftui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58F801082002C2D57577F4CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120C51D921F8192C2665D1F1 /* Pods_messenger_swiftui.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		707D1A6F29936F47000E2E99 = {
 			isa = PBXGroup;
 			children = (
 				707D1A7A29936F47000E2E99 /* messenger_swiftui */,
 				707D1A7929936F47000E2E99 /* Products */,
+				C3E3B867106A8896031C1C4C /* Pods */,
+				58F801082002C2D57577F4CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C3E3B867106A8896031C1C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDF74F3A90698B2F0207FFF9 /* Pods-messenger_swiftui.debug.xcconfig */,
+				6220CD703D9A24C134610707 /* Pods-messenger_swiftui.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707D1A8629936F49000E2E99 /* Build configuration list for PBXNativeTarget "messenger_swiftui" */;
 			buildPhases = (
+				DFE3E3C71963C3FFAC1BDE0E /* [CP] Check Pods Manifest.lock */,
 				707D1A7429936F47000E2E99 /* Sources */,
 				707D1A7529936F47000E2E99 /* Frameworks */,
 				707D1A7629936F47000E2E99 /* Resources */,
+				C214D6F1709AB6F20DAE9A3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,8 +144,6 @@
 			);
 			name = messenger_swiftui;
 			packageProductDependencies = (
-				707D1A982993815E000E2E99 /* FirebaseFirestore */,
-				707D1A9A2993815E000E2E99 /* FirebaseFirestoreSwift */,
 			);
 			productName = messenger_swiftui;
 			productReference = 707D1A7829936F47000E2E99 /* messenger_swiftui.app */;
@@ -154,7 +174,6 @@
 			);
 			mainGroup = 707D1A6F29936F47000E2E99;
 			packageReferences = (
-				707D1A972993815E000E2E99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 707D1A7929936F47000E2E99 /* Products */;
 			projectDirPath = "";
@@ -177,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C214D6F1709AB6F20DAE9A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-messenger_swiftui/Pods-messenger_swiftui-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-messenger_swiftui/Pods-messenger_swiftui-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-messenger_swiftui/Pods-messenger_swiftui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE3E3C71963C3FFAC1BDE0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-messenger_swiftui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		707D1A7429936F47000E2E99 /* Sources */ = {
@@ -314,6 +375,7 @@
 		};
 		707D1A8729936F49000E2E99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF74F3A90698B2F0207FFF9 /* Pods-messenger_swiftui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +404,7 @@
 		};
 		707D1A8829936F49000E2E99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6220CD703D9A24C134610707 /* Pods-messenger_swiftui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,30 +453,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		707D1A972993815E000E2E99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		707D1A982993815E000E2E99 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 707D1A972993815E000E2E99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		707D1A9A2993815E000E2E99 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 707D1A972993815E000E2E99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 707D1A7029936F47000E2E99 /* Project object */;
 }

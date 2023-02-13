@@ -1,0 +1,6 @@
+framework module Pods_messenger_swiftui {
+  umbrella header "Pods-messenger_swiftui-umbrella.h"
+
+  export *
+  module * { export * }
+}
